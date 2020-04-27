@@ -1,5 +1,5 @@
 {
-  "name": "an_hw1-master",
+  "name": "an_hw-master",
   "version": "1.0.0",
   "description": "First try",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Anastasia-Koba/An_HW1.git"
+    "url": "git+https://github.com/Anastasia-Koba/An_HW.git"
   },
   "author": "Anastasia Kalinina",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Anastasia-Koba/An_HW1/issues"
+    "url": "https://github.com/Anastasia-Koba/An_HW/issues"
   },
-  "homepage": "https://github.com/Anastasia-Koba/An_HW1#readme",
+  "homepage": "https://github.com/Anastasia-Koba/An_HW#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
