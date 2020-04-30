@@ -1,0 +1,188 @@
+body{
+    font-size: 30px;
+    font-family: Tahoma, Geneva ,Georgia, 'Segoe UI', Verdana, sans-serif, serif;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 8vh 87vh 5vh;
+    margin: 0px;
+    max-height: 1200px;
+    max-width: 2920px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0; 
+    background: #37ABFF;
+    grid-column: span 12;
+  }
+  
+.header .spacer {
+    flex-grow: 1;
+  }
+  
+.header a {
+    text-decoration: none;
+    display: block;
+  }
+  
+.pin{
+    background: lightgray;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    margin: 10px;
+}
+.header a {
+    padding: 1em;
+    color: white;
+  }
+.header .pin:hover{
+    box-shadow: 0px 0px 10px 10px gray;
+    cursor: pointer;
+} 
+
+.header .logo:hover {
+    background: #2575C2;
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        justify-content: space-around;
+    }
+    .header .spacer {
+        flex-grow: 0;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .header {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .header a { 
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255,0.3); 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .header div:last-of-type a {
+        border-bottom: none;
+    }
+}
+aside{
+    background: rgb(233, 233, 233);
+    grid-column: span 2;
+}
+
+.menu a {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+main{
+    grid-column: span 10;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.bod_card img{
+    width:330px;
+    height:auto;
+    object-fit: cover;
+}
+
+.bod_card {
+    display: inline-block ;
+    width: 330px;
+    height: 460px;  
+    margin: 50px;
+    background: #F3F3F3;
+    border-radius: 10px;
+
+}
+.bod_card p{
+    font-size: 0.6em;
+    margin-top: auto;
+    text-align: left;
+}
+.bod_card b{
+    font-size: 0.8em;
+    text-align: left;
+}
+.bod_card span{
+    text-align: right;
+    font-size: 0.4em;
+    color: rgb(136, 135, 135);
+    text-align: left;
+}
+.bod a{
+    text-align: center;
+    text-decoration: none;
+    color: black;  
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    width: 248px;
+    height: 55px;
+    margin-bottom: 34px;
+    background-color: #37ABFF;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button__text {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer{
+    background: #3C3C3C;
+    grid-column: span 12;
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    align-items: center; 
+
+}
+.down .spacer {
+    flex-grow: 1;
+  }
+
+.down a {
+    margin-right: auto;
+    color: white;
+    text-decoration: none;  
+}
+
+.list{
+    display: flex;  
+    flex-flow: row wrap;
+}
+
+.list >*{
+    padding: 10px;
+    flex: 1 100%;
+}
+@media all and (min-width: 600px) {
+    .menu { flex: 1 0 0; }
+}
+@media all and (min-width: 800px) {
+    .bod     { flex: 3 0px; }
+    .menu    { order: 1; } 
+    .bod     { order: 2; }
+    .footer  { order: 3; }
+}
