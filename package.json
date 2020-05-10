@@ -1,0 +1,23 @@
+{
+  "name": "an_hw1-master",
+  "version": "1.0.0",
+  "description": "First try",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anastasia-Koba/An_HW1.git"
+  },
+  "author": "Anastasia Kalinina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anastasia-Koba/An_HW1/issues"
+  },
+  "homepage": "https://github.com/Anastasia-Koba/An_HW1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
