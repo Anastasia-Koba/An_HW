@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/app.css">
+        <script type="module" src="js/app.js" defer></script>
+        <title>Tensor School</title>
+    </head>
+    <body >
+        <header> 
+        <img id="globl" src="img/logo.jpg" >
+        <span> TENSOR SCHOOL </span>
+        </header>
+        <main>
+            <div id="us">
+            <p> Это страница школы Тензор в городе Калининград. Тут вы можете познакомиться в нашими учениками и посмотреть темы занятий. </p>   
+            </div>
+            <div id="person"></div>
+            <script>
+                const studentArr = [ 
+                    { 
+                        type: 'teacher',
+                        fullName: 'Арсений Попов', 
+                        birthDate: new Date(1983, 3, 20),
+                        post: 'philosopher', 
+                        photo: '/img/ars.jpg' 
+                    }, 
+                    { 
+                        type: 'studetn',
+                        fullName: 'Антон Шастун', 
+                        university: 'БФУ', 
+                        universityYear: 2, 
+                        birthDate: new Date(1998, 4, 19), 
+                        photo: '/img/ant.jpg' 
+                
+                    }, 
+                    { 
+                        type: 'studetn',
+                        fullName: 'Ира Кузнецова', 
+                        university: 'БФУ', 
+                        universityYear: 2, 
+                        birthDate: new Date(1998, 8, 11), 
+                        photo: '/img/ira.jpg' 
+                    }, 
+                    ]; 
+                    studentArr.forEach((item) => { 
+                        const student = new Student(item); 
+                        const studentBlock = appendStudentBlock(student); 
+                        studentBlock.addEventListener('click', (event) => {openCard(student, event.currentTarget);}); 
+                    }); 
+            </script>
+        </main>
+    </body>
+</html>
